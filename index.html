@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=img, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+      <div id="window1">
+        <h1 id="h1">Animated Carousel</h1>
+        <div id="imageSlider1">
+          <img src="./images/rebelrocks.jpg" alt="Eva and Wyatt at rocks by RoR">
+          <img src="./images/riseoftherebellion.jpg" alt="Eva and Wyatt prisoners at RoR">
+          <img src="./images/sleepingbeauty.jpg" alt="Eva and Wyatt in front of Sleaping Beauty Statue">
+    
+        </div>
+      </div>
+
+      
+    <div id="window2">
+        <h1 id="h1">JavaScript Carousel</h1>
+        <div id ="imageSlider2">
+            <img src="./images/rebelrocks.jpg" alt="Eva and Wyatt at rocks by RoR">
+            <img src="./images/riseoftherebellion.jpg" alt="Eva and Wyatt prisoners at RoR">
+            <img src="./images/sleepingbeauty.jpg" alt="Eva and Wyatt in front of Sleaping Beauty Statue"> 
+        </div>
+    </div>
+
+    <div>
+        <div id="buttons">
+            <button onclick="previousSlide()">Previous</button>
+            <button onclick="nextSlide()">Next</button>
+        </div>
+    </div>
+
+   <style>
+       #h1 {
+           text-align: center;
+       }
+
+       #window1 {
+           width: 300px;
+           margin: 0 auto;
+           overflow: hidden;
+       }
+
+       #window2 {
+           width: 300px;
+           margin: 0 auto;
+           overflow: hidden;
+       }
+       
+       #imageSlider1 {
+          display: flex;
+          transform: translateX(-000px);
+          animation: anime 5s infinite;
+       }
+
+       #imageSlider2 {
+          display: flex;
+       }
+
+       img {
+           width: 400px;
+           height: 400px;
+       }
+    
+       @keyframes anime {
+          0% {
+            transform: translateX(0px)
+          }
+          50% {
+            transform: translateX(-600px);
+          }
+          100% {
+              transform: translateX(0px);
+          }
+
+          }
+
+          #buttons {
+              text-align: center;
+          }
+   </style> 
+
+   <script src="./index.js">
+   </script>
+
+</body>
+</html>
